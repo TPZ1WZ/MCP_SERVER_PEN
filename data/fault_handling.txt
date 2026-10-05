@@ -1,0 +1,30 @@
+====================================================================
+STANDARD OPERATING PROCEDURE (SOP) - FAULT HANDLING & SAFETY MANUAL
+MANUFACTURING PLANT LAB - DUAL LINE SYSTEM (LINE-A / LINE-B)
+====================================================================
+
+1. OVERHEAT FAULT PROCEDURE (FAULT CODE: ALT-TEMP-01)
+--------------------------------------------------------------------
+- Normal Operating Range: 50.0°C to 85.0°C.
+- Warning Threshold: 90.0°C.
+- Danger / Auto-Shutdown: > 120.0°C.
+- Action: If machine temperature exceeds warning threshold, immediately log 
+  a maintenance ticket using 'create_maintenance_ticket'.
+- Restriction: Maintenance engineers and supervisors only.
+
+2. SPEED CONTROL & CALIBRATION (FAULT CODE: ALT-SPD-02)
+--------------------------------------------------------------------
+- Normal Speed Range: 500.0 RPM to 2500.0 RPM.
+- Maximum Allowed Range: 0.0 RPM to 3000.0 RPM.
+- Action: Speed adjustments must be requested via 'request_configuration_change'.
+- Approval Control: ANY speed change requires explicit two-person authorization.
+  A Supervisor ('supervisor') must approve the pending request via 
+  'approve_configuration_change'.
+
+3. LINE ISOLATION & ACCESS PRIVILEGES
+--------------------------------------------------------------------
+- Operators ('operator') and Maintenance Engineers ('maintenance_engineer') 
+  are strictly restricted to their assigned production line (LINE-A or LINE-B).
+- Supervisors ('supervisor') hold plant-wide operational oversight.
+
+====================================================================
